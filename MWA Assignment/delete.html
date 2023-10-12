@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Delete Record</title>
+<style>
+input[type=submit] {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 60px;
+  border: 1px solid #fff;
+  cursor: pointer;
+margin:20;
+}
+
+input[type=submit]:hover {
+  background-color: #fff;
+  color: #000;
+}
+</style>
+</head>
+<body>
+<center><h1>Deleting a record from Table</h1></center>
+<center>
+<form action="delete_record.php" method="post">
+<table border="0">
+<tr>
+<td><h3> DataBase Name:</h3></td>
+<td><input type="text" name="dbname"></td>
+</tr>
+<tr>
+<td><h3> Table Name:</h3></td>
+<td><input type="text" name="tbname"></td>
+</tr>
+<tr>
+<td><h3>Condition:</h3></td>
+ <td> <input type="text" name="condition" placeholder="Condition"></td>
+</tr>
+</table>
+<input type="submit" value="Delete">
+</center>
+</body>
+</html>
